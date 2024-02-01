@@ -9,25 +9,29 @@ Gaviraghi Elia - 869493
 ## Folder Structure 
 
 ```
-┣ 📂 progetto \                                # Root directory
-┣ ┣ 📂 dataset\                                # training and test set CSV
-┣ ┃ ┣ 📄 train_info_clean.csv                  # training set CSV after cleaning 
-┣ ┃ ┣ 📄 train_info_dirty.csv                  # original CSV
-┣ ┃ ┣ 📄 val_info.csv                          # test set CSV
-┣ ┣ 📂 matlab_script\                 
-┣ ┃ ┣ 📄 alex_net_on_validation.m
-┣ ┃ ┣ 📄 clean_and_augment_dataset.m
-┣ ┃ ┣ 📄 clustering_features.m                 # script for cleaning dirty dataset
-┣ ┃ ┣ 📄 from_folder_to_subfolder.m            # obtain foldering dataset from the original dataset
-┣ ┃ ┣ 📄 from_subfolder_to_one_folder.m        # the inverse process
-┣ ┣ 📂 notebook\                               # colab files
-┣ ┃ ┣ 📄 MobileNetV3.ipynb                     # main notebook where we fine-tuning the selected model
-┣ ┃ ┣ 📄 Category_Search_foodx251.ipynb        # category search with selected method using our fine-tuned model
-┣ ┃ ┣ 📄 Category_Search_foodx251_cheat.ipynb  # a little bit alternative method for category search
-┣ ┃ ┣ 📄 Category_Search_imagenet.ipynb        # inital and alternative method with CNN trained on ImageNet
-┣ ┣ 📄 Presentazione Visual.pdf
-┣ ┣ 📄 Presentazione Visual.pptx
-┣ ┣ 📄 README.md                               # it's me!
+┣ 📂 progetto \                            # Root directory
+┣ ┣ 📂 dataset\                            # folder contenenti i dataset
+┣ ┃ ┣ 📄 train.csv                         # CSV del training set
+┣ ┃ ┣ 📄 test_merged.csv                   # CSV modificato del test set
+┣ ┃ ┣ 📄 val_info.csv                      # test set CSV
+┣ ┣ 📂 Transformers\                 
+┣ ┃ ┣ 📄 transformers.ipynb                # colab notebook della RNN
+┣ ┣ 📂 RNN\                 
+┣ ┃ ┣ 📄 RNN.ipynb                         # colab notebook del transformers
+┣ ┣ ┣ 📂 GloVe\                            # folder contenente due embedding preallenati
+┣ ┃ ┃ ┣ 📄 glove.840B.300d.txt
+┣ ┃ ┃ ┣ 📄 glove.twitter.27B.200d.txt 
+┣ ┣ ┣ 📂 Best_Model\                       # modelli keras delle migliori RNN
+┣ ┃ ┃ ┣ 📄 best_RNN_tuned.h5               # miglior RNN con tuning iperparametri
+┣ ┃ ┃ ┣ 📄 best_RNN_840b_embedded.h5       # miglior RNN con embedding 840B.300d
+┣ ┃ ┃ ┣ 📄 best_RNN_twitter_embedded.h5    # miglior RNN ottenuta con embedding Twitter
+┣ ┣ ┣ 📂 Tuning_Result\                    # checkpoint di varie RNNs sperimentate
+┣ ┣ 📂 Report\                 
+┣ ┃ ┣ 📄 report.pdf                        # PDF report progetto
+┣ ┃ ┣ 📄 report.zip                             # codice latex del report
+┣ ┣ 📄 Presentazione AML.pdf
+┣ ┣ 📄 Presentazione AML.pptx
+┣ ┣ 📄 README.md                          # it's me!
 ```
 
 ## 🛠 Istruzioni per l'uso
