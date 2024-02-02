@@ -9,29 +9,30 @@ Gaviraghi Elia - 869493
 ## Folder Structure 
 
 ```
-┣ 📂 progetto \                            # Root directory
-┣ ┣ 📂 dataset\                            # folder contenenti i dataset
-┣ ┃ ┣ 📄 train.csv                         # CSV del training set
-┣ ┃ ┣ 📄 test_merged.csv                   # CSV modificato del test set
-┣ ┃ ┣ 📄 val_info.csv                      # test set CSV
+┣ 📂 progetto \                           # Root directory
+┣ ┣ 📂 dataset\                           # folder contenenti i dataset
+┣ ┃ ┣ 📄 train.csv                        # CSV del training set
+┣ ┃ ┣ 📄 test_merged.csv                  # CSV modificato del test set
+┣ ┃ ┣ 📄 val_info.csv                     # test set CSV
 ┣ ┣ 📂 Transformers\                 
-┣ ┃ ┣ 📄 transformer BERT.ipynb                # colab notebook della RNN
-┣ ┣ ┣ 📂 Best_Model\  
+┣ ┃ ┣ 📄 transformer BERT.ipynb           # colab notebook transformers BERT
+┣ ┣ ┣ 📂 Best_Model\
+┣ ┃ ┃ ┣ 📄 transformer BERT.ipynb         # colab notebook transformers BERT
 ┣ ┣ 📂 RNN\                 
-┣ ┃ ┣ 📄 RNN.ipynb                         # colab notebook del transformers
-┣ ┣ ┣ 📂 GloVe\                            # folder contenente due embedding preallenati
+┣ ┃ ┣ 📄 .safetensor, .json, .txt,...     # BERT transformer
+┣ ┣ ┣ 📂 GloVe\                           # folder contenente due embedding preallenati
 ┣ ┃ ┃ ┣ 📄 glove.840B.300d.txt
 ┣ ┃ ┃ ┣ 📄 glove.twitter.27B.200d.txt 
-┣ ┣ ┣ 📂 Best_Model\                       # modelli keras delle migliori RNNs
-┣ ┃ ┃ ┣ 📄 best_RNN_tuned.h5               # miglior RNN con tuning iperparametri
-┣ ┃ ┃ ┣ 📄 best_RNN_840b_embedded.h5       # miglior RNN con embedding 840B.300d
-┣ ┃ ┃ ┣ 📄 best_RNN_twitter_embedded.h5    # miglior RNN ottenuta con embedding Twitter
-┣ ┣ ┣ 📂 Tuning_Result\                    # checkpoint tuning di varie RNNs sperimentate
+┣ ┣ ┣ 📂 Best_Model\                      # modelli keras delle migliori RNNs
+┣ ┃ ┃ ┣ 📄 best_RNN_tuned.h5              # miglior RNN con tuning iperparametri
+┣ ┃ ┃ ┣ 📄 best_RNN_840b_embedded.h5      # miglior RNN con embedding 840B.300d
+┣ ┃ ┃ ┣ 📄 best_RNN_twitter_embedded.h5   # miglior RNN ottenuta con embedding Twitter
+┣ ┣ ┣ 📂 Tuning_Result\                   # checkpoint tuning di varie RNNs sperimentate
 ┣ ┣ 📂 Report\                 
-┣ ┃ ┣ 📄 report.pdf                        # PDF report progetto
-┣ ┃ ┣ 📄 report.zip                             # codice latex del report
-┣ ┣ 📄 Presentazione AML.pdf
-┣ ┣ 📄 Presentazione AML.pptx
+┣ ┃ ┣ 📄 report.pdf                       # PDF report progetto
+┣ ┃ ┣ 📄 report.zip                       # codice latex del report
+┣ ┣ 📄 Presentazione AML.pdf              # pdf presentazione d'esame
+┣ ┣ 📄 Presentazione AML.pptx             # ppt presentazione d'esame
 ┣ ┣ 📄 README.md                          # it's me!
 ```
 
